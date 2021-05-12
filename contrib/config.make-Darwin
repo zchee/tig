@@ -9,7 +9,7 @@ TIG_LDLIBS = -liconv
 NCURSES_DIR = $(wildcard /usr/local/opt/ncurses)
 
 ifneq ($(NCURSES_DIR),)
-	TIG_NCURSES = -lncursesw
+	TIG_NCURSES = /usr/local/opt/ncurses-head/lib/libncursesw.a
 	TIG_CPPFLAGS += -I$(NCURSES_DIR)/include -DHAVE_NCURSESW_CURSES_H
 	TIG_LDFLAGS += -L$(NCURSES_DIR)/lib
 else

@@ -4,7 +4,7 @@
 prefix=/usr/local
 
 # Use ncursesw.
-LDLIBS = -lncursesw
+LDLIBS = /usr/local/opt/ncurses-head/lib/libncursesw.a
 CPPFLAGS = -DHAVE_NCURSESW_CURSES_H
 
 # Use readline.

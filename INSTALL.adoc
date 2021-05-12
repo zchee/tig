@@ -164,7 +164,7 @@ The following example `config.make` manually configures Tig to use the ncurses
 library with wide character support and include the proper ncurses header file
 (see tig.h for more information):
 
-	LDLIBS = -lncursesw
+	LDLIBS = /usr/local/opt/ncurses-head/lib/libncursesw.a
 	CPPFLAGS = -DHAVE_NCURSESW_CURSES_H
 
 For more examples of build settings, see `contrib/config.make` and
